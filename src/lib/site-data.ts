@@ -25,6 +25,7 @@ export const siteConfig = {
     { href: "/", label: "首页" },
     { href: "/docs", label: "教程" },
     { href: "/about", label: "关于" },
+    { href: "#", label: "开通 Codex", external: true },
   ],
 };
 

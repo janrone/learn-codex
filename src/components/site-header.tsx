@@ -17,8 +17,10 @@ export function SiteHeader() {
         <nav className="flex items-center gap-6 text-sm text-slate-300">
           {siteConfig.nav.map((item) => (
             <Link
-              key={item.href}
+              key={`${item.label}-${item.href}`}
               href={item.href}
+              target={item.external ? "_blank" : undefined}
+              rel={item.external ? "noreferrer" : undefined}
               className="transition hover:text-white"
             >
               {item.label}
