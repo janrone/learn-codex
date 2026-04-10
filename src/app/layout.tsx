@@ -1,19 +1,8 @@
 import type { Metadata } from "next";
-import { Noto_Sans_SC, Space_Grotesk } from "next/font/google";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { siteConfig } from "@/lib/site-data";
 import "./globals.css";
-
-const displayFont = Space_Grotesk({
-  variable: "--font-display",
-  subsets: ["latin"],
-});
-
-const bodyFont = Noto_Sans_SC({
-  variable: "--font-body",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -40,7 +29,7 @@ export default function RootLayout({
   return (
     <html
       lang="zh-CN"
-      className={`${displayFont.variable} ${bodyFont.variable} h-full antialiased`}
+      className="h-full antialiased"
     >
       <body className="min-h-full">
         <div className="site-shell">

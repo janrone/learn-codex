@@ -3,7 +3,7 @@ import { GuideCard } from "@/components/guide-card";
 import { categories, getFeaturedGuides, guides, siteConfig } from "@/lib/site-data";
 
 const metrics = [
-  { value: "8", label: "首批核心教程" },
+  { value: "9", label: "首批核心教程" },
   { value: "5", label: "内容专题" },
   { value: "Next.js", label: "站点技术栈" },
 ];
