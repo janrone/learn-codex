@@ -1,11 +1,11 @@
 import Link from "next/link";
 import { GuideCard } from "@/components/guide-card";
-import { categories, getFeaturedGuides, guides, siteConfig } from "@/lib/site-data";
+import { categories, getFeaturedGuides, guides } from "@/lib/site-data";
 
 const metrics = [
-  { value: "9", label: "首批核心教程" },
-  { value: "5", label: "内容专题" },
-  { value: "Next.js", label: "站点技术栈" },
+  { value: "10", label: "核心教程" },
+  { value: "5", label: "学习专题" },
+  { value: "10", label: "实战案例" },
 ];
 
 export default function Home() {
@@ -16,14 +16,14 @@ export default function Home() {
       <section className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
         <div className="space-y-8">
           <div className="inline-flex items-center rounded-full border border-orange-300/20 bg-orange-300/10 px-4 py-2 text-sm text-orange-100">
-            Codex 中文使用教程站
+            Codex Guides
           </div>
           <div className="space-y-5">
-            <h1 className="max-w-3xl text-5xl font-semibold tracking-tight text-white md:text-7xl">
-              用中文把 <span className="text-orange-300">Codex</span> 真正用起来。
+            <h1 className="max-w-4xl text-5xl font-semibold tracking-tight text-white md:text-7xl">
+              掌握 <span className="text-orange-300">Codex</span>，从第一条命令到真实工作流。
             </h1>
             <p className="max-w-2xl text-lg leading-8 text-slate-300">
-              {siteConfig.description}
+              从入门到实战，系统掌握 Codex 的使用方法。
             </p>
           </div>
           <div className="flex flex-col gap-4 sm:flex-row">
@@ -43,7 +43,7 @@ export default function Home() {
         </div>
 
         <div className="grid gap-4 rounded-[32px] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0.03))] p-6 shadow-[0_30px_80px_rgba(3,7,18,0.45)]">
-          <p className="text-sm uppercase tracking-[0.2em] text-slate-400">上线范围</p>
+          <p className="text-sm uppercase tracking-[0.2em] text-slate-400">内容概览</p>
           <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
             {metrics.map((metric) => (
               <div

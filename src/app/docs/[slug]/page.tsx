@@ -160,15 +160,6 @@ export default async function GuidePage({ params }: GuidePageProps) {
         </section>
       ) : null}
 
-      <section className="rounded-[28px] border border-orange-300/20 bg-[linear-gradient(135deg,rgba(255,170,96,0.15),rgba(76,110,245,0.12))] p-8">
-        <p className="text-sm uppercase tracking-[0.24em] text-orange-100">Next Step</p>
-        <h2 className="mt-3 text-3xl font-semibold text-white">
-          把 Learn Codex 接到你的正式域名上
-        </h2>
-        <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-200">
-          当前项目已经可以直接部署到 Vercel。你只需要设置站点 URL 环境变量、导入仓库，并绑定现有域名，就能把这套中文教程站上线。
-        </p>
-      </section>
     </main>
   );
 }
