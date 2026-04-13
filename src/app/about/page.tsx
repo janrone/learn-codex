@@ -30,9 +30,9 @@ export default function AboutPage() {
           </p>
         </div>
         <div className="rounded-[28px] border border-white/10 bg-white/[0.04] p-6">
-          <h2 className="text-xl font-semibold text-white">技术方向</h2>
+          <h2 className="text-xl font-semibold text-white">内容方向</h2>
           <p className="mt-3 text-sm leading-7 text-slate-300">
-            站点基于 Next.js 构建，适合直接部署在 Vercel，并能继续扩展 SEO、搜索和内容管理能力。
+            围绕教程、命令、工作流和实战案例持续扩展，优先覆盖真实使用场景。
           </p>
         </div>
       </section>

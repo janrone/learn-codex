@@ -16,7 +16,7 @@ export default function Home() {
       <section className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
         <div className="space-y-8">
           <div className="inline-flex items-center rounded-full border border-orange-300/20 bg-orange-300/10 px-4 py-2 text-sm text-orange-100">
-            Codex Guides
+            Codex 教程站
           </div>
           <div className="space-y-5">
             <h1 className="max-w-4xl text-5xl font-semibold tracking-tight text-white md:text-7xl">
@@ -43,7 +43,7 @@ export default function Home() {
         </div>
 
         <div className="grid gap-4 rounded-[32px] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0.03))] p-6 shadow-[0_30px_80px_rgba(3,7,18,0.45)]">
-          <p className="text-sm uppercase tracking-[0.2em] text-slate-400">内容概览</p>
+          <p className="text-sm uppercase tracking-[0.2em] text-slate-400">学习概览</p>
           <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
             {metrics.map((metric) => (
               <div

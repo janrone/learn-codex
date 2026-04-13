@@ -15,7 +15,7 @@ export default function DocsPage() {
           从第一篇入门，到真正接手项目任务。
         </h1>
         <p className="text-lg leading-8 text-slate-300">
-          这里是 Learn Codex 的教程索引。所有内容都按中文开发者的使用路径组织，优先覆盖最常见、最容易直接上手的任务。
+          这里收录 Learn Codex 的全部教程内容，覆盖入门、命令、工作流、实战案例和常见问题。
         </p>
       </section>
 
