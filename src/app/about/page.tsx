@@ -12,7 +12,8 @@ export default function AboutPage() {
           为什么做 Learn Codex
         </h1>
         <p className="text-lg leading-8 text-slate-300">
-          这个站点的目标不是简单搬运概念，而是把中文开发者最需要的内容结构化整理出来：Codex 能做什么、怎么下任务、怎么排错、怎么把它真正接进日常开发流程。
+          这个站点的目标不是停留在概念介绍，而是把中文开发者最需要的内容结构化整理出来：
+          Codex 能做什么、怎么下任务、怎么排错、怎么把它真正接进日常开发流程。
         </p>
       </div>
 
