@@ -1,10 +1,20 @@
 import Link from "next/link";
 import { siteConfig } from "@/lib/site-data";
 
-const extraNavItems = [{ href: "/hot", label: "热门项目" }];
+type NavItem = {
+  href: string;
+  label: string;
+  external?: boolean;
+};
+
+const extraNavItems: NavItem[] = [{ href: "/hot", label: "热门项目" }];
 
 export function SiteHeader() {
-  const navItems = [...siteConfig.nav.slice(0, 2), ...extraNavItems, ...siteConfig.nav.slice(2)];
+  const navItems: NavItem[] = [
+    ...siteConfig.nav.slice(0, 2),
+    ...extraNavItems,
+    ...siteConfig.nav.slice(2),
+  ];
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-[rgba(8,15,28,0.82)] backdrop-blur">
@@ -19,21 +29,26 @@ export function SiteHeader() {
         </Link>
 
         <nav className="flex flex-wrap items-center justify-end gap-3 text-sm text-slate-300">
-          {navItems.map((item) => (
-            <Link
-              key={`${item.label}-${item.href}`}
-              href={item.href}
-              target={item.external ? "_blank" : undefined}
-              rel={item.external ? "noreferrer" : undefined}
-              className={
-                item.label === "开通 Codex"
-                  ? "inline-flex items-center rounded-full bg-orange-400 px-5 py-2.5 font-semibold text-slate-950 transition hover:bg-orange-300"
-                  : "px-2 py-1 transition hover:text-white"
-              }
-            >
-              {item.label}
-            </Link>
-          ))}
+          {navItems.map((item) => {
+            const isPrimary = Boolean(item.external);
+            const label = item.external ? "体验 Codex" : item.label;
+
+            return (
+              <Link
+                key={`${item.label}-${item.href}`}
+                href={item.href}
+                target={item.external ? "_blank" : undefined}
+                rel={item.external ? "noreferrer" : undefined}
+                className={
+                  isPrimary
+                    ? "inline-flex items-center rounded-full bg-orange-400 px-5 py-2.5 font-semibold text-slate-950 transition hover:bg-orange-300"
+                    : "px-2 py-1 transition hover:text-white"
+                }
+              >
+                {label}
+              </Link>
+            );
+          })}
         </nav>
       </div>
     </header>
