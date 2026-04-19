@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { GuideCard } from "@/components/guide-card";
+import { hotRepos } from "@/lib/hot-data";
 import { categories, getFeaturedGuides, guides } from "@/lib/site-data";
 
 const metrics = [
@@ -34,10 +35,10 @@ export default function Home() {
               开始学习
             </Link>
             <Link
-              href="/docs/getting-started"
+              href="/hot"
               className="inline-flex items-center justify-center rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/8"
             >
-              第一篇教程
+              看热门仓库
             </Link>
           </div>
         </div>
@@ -83,6 +84,45 @@ export default function Home() {
         <div className="grid gap-6 lg:grid-cols-3">
           {featuredGuides.map((guide) => (
             <GuideCard key={guide.slug} guide={guide} />
+          ))}
+        </div>
+      </section>
+
+      <section className="space-y-6">
+        <div className="flex items-end justify-between gap-4">
+          <div>
+            <p className="text-sm uppercase tracking-[0.24em] text-slate-400">Hot Repos</p>
+            <h2 className="mt-3 text-3xl font-semibold text-white">OpenAI Codex 热门仓库</h2>
+          </div>
+          <Link href="/hot" className="text-sm text-orange-200 transition hover:text-white">
+            查看完整榜单
+          </Link>
+        </div>
+        <div className="grid gap-4 lg:grid-cols-3">
+          {hotRepos.slice(0, 3).map((repo) => (
+            <article
+              key={repo.name}
+              className="rounded-[28px] border border-white/10 bg-white/[0.04] p-6"
+            >
+              <div className="flex items-center justify-between gap-4 text-sm">
+                <span className="rounded-full border border-orange-300/20 bg-orange-400/10 px-3 py-1 text-orange-100">
+                  {repo.type}
+                </span>
+                <span className="text-slate-300">{repo.stars}</span>
+              </div>
+              <h3 className="mt-4 text-xl font-semibold text-white [overflow-wrap:anywhere]">
+                {repo.name}
+              </h3>
+              <p className="mt-3 text-sm leading-7 text-slate-300">{repo.summary}</p>
+              <Link
+                href={repo.href}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-6 inline-flex items-center text-sm font-medium text-orange-200 transition hover:text-white"
+              >
+                打开仓库
+              </Link>
+            </article>
           ))}
         </div>
       </section>

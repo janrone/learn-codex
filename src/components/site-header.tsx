@@ -1,7 +1,11 @@
 import Link from "next/link";
 import { siteConfig } from "@/lib/site-data";
 
+const extraNavItems = [{ href: "/hot", label: "热门项目" }];
+
 export function SiteHeader() {
+  const navItems = [...siteConfig.nav.slice(0, 2), ...extraNavItems, ...siteConfig.nav.slice(2)];
+
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-[rgba(8,15,28,0.82)] backdrop-blur">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-6 px-6 py-4">
@@ -15,7 +19,7 @@ export function SiteHeader() {
         </Link>
 
         <nav className="flex flex-wrap items-center justify-end gap-3 text-sm text-slate-300">
-          {siteConfig.nav.map((item) => (
+          {navItems.map((item) => (
             <Link
               key={`${item.label}-${item.href}`}
               href={item.href}
