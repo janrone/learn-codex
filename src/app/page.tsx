@@ -4,7 +4,7 @@ import { hotRepos } from "@/lib/hot-data";
 import { categories, getFeaturedGuides, guides } from "@/lib/site-data";
 
 const metrics = [
-  { value: "10", label: "核心教程" },
+  { value: "11", label: "核心教程" },
   { value: "5", label: "学习专题" },
   { value: "10", label: "实战案例" },
 ];

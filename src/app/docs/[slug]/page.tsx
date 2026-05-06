@@ -107,6 +107,20 @@ export default async function GuidePage({ params }: GuidePageProps) {
         ))}
       </section>
 
+      {guide.source ? (
+        <section className="rounded-[24px] border border-white/10 bg-slate-950/35 p-6">
+          <p className="text-sm text-slate-400">出处</p>
+          <Link
+            href={guide.source.url}
+            target="_blank"
+            rel="noreferrer"
+            className="mt-3 inline-flex text-sm font-medium text-orange-200 transition hover:text-white"
+          >
+            {guide.source.label}
+          </Link>
+        </section>
+      ) : null}
+
       <section className="grid gap-4 md:grid-cols-2">
         <div className="rounded-[24px] border border-white/10 bg-slate-950/35 p-6">
           <p className="text-sm text-slate-400">上一篇</p>
