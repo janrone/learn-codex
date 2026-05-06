@@ -1,0 +1,27 @@
+<svg width="900" height="680" viewBox="0 0 900 680" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="680" rx="36" fill="#0A1220"/>
+  <rect x="34" y="34" width="832" height="612" rx="28" fill="#10192B" stroke="rgba(255,255,255,0.1)"/>
+  <text x="72" y="102" fill="#D7E5F8" font-family="Segoe UI, Arial, sans-serif" font-size="20" letter-spacing="2">WORKFLOW LOOP</text>
+  <text x="72" y="162" fill="#F7F3EA" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="700">Read, implement, verify</text>
+  <circle cx="240" cy="380" r="110" fill="#132441" stroke="rgba(255,255,255,0.08)"/>
+  <circle cx="450" cy="380" r="110" fill="#132441" stroke="rgba(255,255,255,0.08)"/>
+  <circle cx="660" cy="380" r="110" fill="#132441" stroke="rgba(255,255,255,0.08)"/>
+  <text x="193" y="360" fill="#86D7FF" font-family="Consolas, monospace" font-size="18">01</text>
+  <text x="178" y="396" fill="#EEF4FF" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700">Read</text>
+  <text x="154" y="432" fill="#9AA9C2" font-family="Segoe UI, Arial, sans-serif" font-size="18">Inspect repo context</text>
+  <text x="403" y="360" fill="#FFBA84" font-family="Consolas, monospace" font-size="18">02</text>
+  <text x="357" y="396" fill="#EEF4FF" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700">Implement</text>
+  <text x="355" y="432" fill="#9AA9C2" font-family="Segoe UI, Arial, sans-serif" font-size="18">Make bounded changes</text>
+  <text x="613" y="360" fill="#9CF1B6" font-family="Consolas, monospace" font-size="18">03</text>
+  <text x="590" y="396" fill="#EEF4FF" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700">Verify</text>
+  <text x="563" y="432" fill="#9AA9C2" font-family="Segoe UI, Arial, sans-serif" font-size="18">Build, test, preview</text>
+  <path d="M351 380H339" stroke="#5FCFFF" stroke-width="6" stroke-linecap="round"/>
+  <path d="M339 380L356 366" stroke="#5FCFFF" stroke-width="6" stroke-linecap="round"/>
+  <path d="M339 380L356 394" stroke="#5FCFFF" stroke-width="6" stroke-linecap="round"/>
+  <path d="M561 380H549" stroke="#FFAA6C" stroke-width="6" stroke-linecap="round"/>
+  <path d="M549 380L566 366" stroke="#FFAA6C" stroke-width="6" stroke-linecap="round"/>
+  <path d="M549 380L566 394" stroke="#FFAA6C" stroke-width="6" stroke-linecap="round"/>
+  <path d="M660 510C660 563.019 592.844 606 450 606C307.156 606 240 563.019 240 510" stroke="#9CF1B6" stroke-width="6" stroke-linecap="round"/>
+  <path d="M240 510L254 528" stroke="#9CF1B6" stroke-width="6" stroke-linecap="round"/>
+  <path d="M240 510L261 507" stroke="#9CF1B6" stroke-width="6" stroke-linecap="round"/>
+</svg>

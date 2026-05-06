@@ -1,0 +1,30 @@
+<svg width="900" height="680" viewBox="0 0 900 680" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="680" rx="36" fill="#0B1424"/>
+  <rect x="36" y="36" width="828" height="608" rx="28" fill="#101B31" stroke="rgba(255,255,255,0.1)"/>
+  <text x="72" y="104" fill="#FFD9BC" font-family="Segoe UI, Arial, sans-serif" font-size="18" letter-spacing="2">TASK BRIEF</text>
+  <text x="72" y="166" fill="#F7F3EA" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="700">A usable Codex task has four parts</text>
+  <g>
+    <rect x="72" y="220" width="356" height="156" rx="24" fill="#132441" stroke="rgba(255,255,255,0.08)"/>
+    <text x="104" y="268" fill="#FFBA84" font-family="Consolas, monospace" font-size="18">01 Goal</text>
+    <text x="104" y="314" fill="#EEF4FF" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="600">What outcome do you want?</text>
+    <text x="104" y="350" fill="#9AA9C2" font-family="Segoe UI, Arial, sans-serif" font-size="18">Describe the result, not just the action.</text>
+  </g>
+  <g>
+    <rect x="472" y="220" width="356" height="156" rx="24" fill="#132441" stroke="rgba(255,255,255,0.08)"/>
+    <text x="504" y="268" fill="#86D7FF" font-family="Consolas, monospace" font-size="18">02 Scope</text>
+    <text x="504" y="314" fill="#EEF4FF" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="600">Which files or modules are in?</text>
+    <text x="504" y="350" fill="#9AA9C2" font-family="Segoe UI, Arial, sans-serif" font-size="18">Keep the working set bounded.</text>
+  </g>
+  <g>
+    <rect x="72" y="410" width="356" height="156" rx="24" fill="#132441" stroke="rgba(255,255,255,0.08)"/>
+    <text x="104" y="458" fill="#9CF1B6" font-family="Consolas, monospace" font-size="18">03 Limits</text>
+    <text x="104" y="504" fill="#EEF4FF" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="600">What should stay untouched?</text>
+    <text x="104" y="540" fill="#9AA9C2" font-family="Segoe UI, Arial, sans-serif" font-size="18">No new deps, no API changes, keep current style.</text>
+  </g>
+  <g>
+    <rect x="472" y="410" width="356" height="156" rx="24" fill="#132441" stroke="rgba(255,255,255,0.08)"/>
+    <text x="504" y="458" fill="#F6D06D" font-family="Consolas, monospace" font-size="18">04 Verify</text>
+    <text x="504" y="504" fill="#EEF4FF" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="600">How do we know it is done?</text>
+    <text x="504" y="540" fill="#9AA9C2" font-family="Segoe UI, Arial, sans-serif" font-size="18">Build, test, preview, and list remaining risks.</text>
+  </g>
+</svg>

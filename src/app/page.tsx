@@ -89,6 +89,26 @@ export default function Home() {
       </section>
 
       <section className="space-y-6">
+        <div className="rounded-[32px] border border-white/10 bg-[linear-gradient(135deg,rgba(255,155,83,0.16),rgba(255,255,255,0.03))] p-7">
+          <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+            <div className="max-w-3xl">
+              <p className="text-sm uppercase tracking-[0.24em] text-orange-200">热门相关</p>
+              <h2 className="mt-3 text-3xl font-semibold text-white">
+                新增长文：把 Codex 真正接进日常开发流程
+              </h2>
+              <p className="mt-3 text-sm leading-7 text-slate-200">
+                这篇整理稿把 Codex 的任务下发、执行闭环、排错顺序和落地方法放到一篇里，适合直接照着接进你的真实项目。
+              </p>
+            </div>
+            <Link
+              href="/hot/codex-practical-flow"
+              className="inline-flex items-center justify-center rounded-full bg-orange-400 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-orange-300"
+            >
+              阅读热门相关
+            </Link>
+          </div>
+        </div>
+
         <div className="flex items-end justify-between gap-4">
           <div>
             <p className="text-sm uppercase tracking-[0.24em] text-slate-400">Hot Repos</p>

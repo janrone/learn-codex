@@ -1,0 +1,34 @@
+<svg width="960" height="760" viewBox="0 0 960 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="960" height="760" rx="40" fill="#08101D"/>
+  <rect width="960" height="760" rx="40" fill="url(#paint0_radial)"/>
+  <rect x="44" y="44" width="872" height="672" rx="32" fill="#0E1728" stroke="rgba(255,255,255,0.1)"/>
+  <rect x="84" y="92" width="300" height="28" rx="14" fill="#FF8E42" fill-opacity="0.16"/>
+  <text x="104" y="111" fill="#FFD9BC" font-family="Segoe UI, Arial, sans-serif" font-size="16" letter-spacing="2">HOT RELATED</text>
+  <text x="84" y="182" fill="#F8F4EB" font-family="Segoe UI, Arial, sans-serif" font-size="54" font-weight="700">Codex</text>
+  <text x="84" y="246" fill="#F8F4EB" font-family="Segoe UI, Arial, sans-serif" font-size="54" font-weight="700">Practical Flow</text>
+  <text x="84" y="312" fill="#A8B6CD" font-family="Segoe UI, Arial, sans-serif" font-size="24">Read the repo. Make the change. Verify the result.</text>
+  <rect x="84" y="372" width="236" height="126" rx="24" fill="#111F35" stroke="rgba(255,255,255,0.08)"/>
+  <text x="112" y="418" fill="#FFBF8C" font-family="Consolas, monospace" font-size="18">Task Brief</text>
+  <text x="112" y="454" fill="#E9EEF8" font-family="Segoe UI, Arial, sans-serif" font-size="20">Goal</text>
+  <text x="112" y="482" fill="#98A8C4" font-family="Segoe UI, Arial, sans-serif" font-size="16">Scope / Limits / Verify</text>
+  <rect x="348" y="372" width="236" height="126" rx="24" fill="#111F35" stroke="rgba(255,255,255,0.08)"/>
+  <text x="376" y="418" fill="#86D7FF" font-family="Consolas, monospace" font-size="18">Execution</text>
+  <text x="376" y="454" fill="#E9EEF8" font-family="Segoe UI, Arial, sans-serif" font-size="20">Read</text>
+  <text x="376" y="482" fill="#98A8C4" font-family="Segoe UI, Arial, sans-serif" font-size="16">Edit / Diff / Review</text>
+  <rect x="612" y="372" width="236" height="126" rx="24" fill="#111F35" stroke="rgba(255,255,255,0.08)"/>
+  <text x="640" y="418" fill="#9CF1B6" font-family="Consolas, monospace" font-size="18">Verification</text>
+  <text x="640" y="454" fill="#E9EEF8" font-family="Segoe UI, Arial, sans-serif" font-size="20">Build</text>
+  <text x="640" y="482" fill="#98A8C4" font-family="Segoe UI, Arial, sans-serif" font-size="16">Test / Preview / Risks</text>
+  <path d="M320 435H348" stroke="#FFAA6C" stroke-width="4" stroke-linecap="round"/>
+  <path d="M584 435H612" stroke="#86D7FF" stroke-width="4" stroke-linecap="round"/>
+  <rect x="84" y="544" width="764" height="112" rx="28" fill="#0B1526" stroke="rgba(255,255,255,0.08)"/>
+  <text x="112" y="588" fill="#F8F4EB" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="600">Turn Codex into a stable part of daily development.</text>
+  <text x="112" y="626" fill="#98A8C4" font-family="Segoe UI, Arial, sans-serif" font-size="18">Not a chat toy. A bounded workflow for real repository work.</text>
+  <defs>
+    <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(742 116) rotate(130.746) scale(775.063 901.768)">
+      <stop stop-color="#FF7A1A" stop-opacity="0.32"/>
+      <stop offset="0.43" stop-color="#0F1A2D" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#08101D" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>
