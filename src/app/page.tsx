@@ -94,14 +94,14 @@ export default function Home() {
             <div className="max-w-3xl">
               <p className="text-sm uppercase tracking-[0.24em] text-orange-200">热门相关</p>
               <h2 className="mt-3 text-3xl font-semibold text-white">
-                新增长文：把 Codex 真正接进日常开发流程
+                新增长文：手机远程控制 Codex
               </h2>
               <p className="mt-3 text-sm leading-7 text-slate-200">
-                这篇整理稿把 Codex 的任务下发、执行闭环、排错顺序和落地方法放到一篇里，适合直接照着接进你的真实项目。
+                这篇整理稿讲清楚手机联动的真实作用、配置步骤、远程审核能力，以及家里电脑、Mac mini、VPS 三种工作站方案。
               </p>
             </div>
             <Link
-              href="/hot/codex-practical-flow"
+              href="/hot/codex-mobile-control"
               className="inline-flex items-center justify-center rounded-full bg-orange-400 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-orange-300"
             >
               阅读热门相关

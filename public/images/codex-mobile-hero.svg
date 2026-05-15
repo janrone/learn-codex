@@ -1,0 +1,39 @@
+<svg width="960" height="760" viewBox="0 0 960 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="960" height="760" fill="#0B1426"/>
+  <path d="M0 0H960V760H0V0Z" fill="url(#bg)"/>
+  <path d="M78 122H882" stroke="#263750" stroke-width="2" stroke-dasharray="8 14"/>
+  <path d="M78 638H882" stroke="#263750" stroke-width="2" stroke-dasharray="8 14"/>
+  <rect x="96" y="150" width="512" height="336" rx="26" fill="#111D31" stroke="#38506D" stroke-width="3"/>
+  <rect x="122" y="180" width="460" height="270" rx="14" fill="#07101B"/>
+  <rect x="154" y="216" width="178" height="18" rx="9" fill="#FFB15E"/>
+  <rect x="154" y="260" width="360" height="14" rx="7" fill="#4B6382"/>
+  <rect x="154" y="292" width="312" height="14" rx="7" fill="#4B6382"/>
+  <rect x="154" y="324" width="382" height="14" rx="7" fill="#4B6382"/>
+  <rect x="154" y="374" width="146" height="38" rx="19" fill="#FF9F43"/>
+  <rect x="324" y="374" width="134" height="38" rx="19" fill="#12263F" stroke="#3E5B7C" stroke-width="2"/>
+  <path d="M228 542H476L506 608H198L228 542Z" fill="#172338" stroke="#38506D" stroke-width="3"/>
+  <rect x="176" y="606" width="354" height="28" rx="14" fill="#233653"/>
+  <rect x="636" y="178" width="208" height="422" rx="42" fill="#111D31" stroke="#46617F" stroke-width="4"/>
+  <rect x="658" y="216" width="164" height="340" rx="24" fill="#07101B"/>
+  <rect x="710" y="194" width="58" height="8" rx="4" fill="#587190"/>
+  <circle cx="740" cy="250" r="30" fill="#FFB15E"/>
+  <rect x="690" y="306" width="100" height="14" rx="7" fill="#EAF2FF"/>
+  <rect x="686" y="334" width="108" height="10" rx="5" fill="#6B83A2"/>
+  <rect x="684" y="382" width="112" height="52" rx="18" fill="#12385B" stroke="#4BA3FF" stroke-width="2"/>
+  <rect x="684" y="452" width="112" height="52" rx="18" fill="#2C1F16" stroke="#FFB15E" stroke-width="2"/>
+  <path d="M608 318C642 304 665 300 696 306" stroke="#FFB15E" stroke-width="5" stroke-linecap="round"/>
+  <path d="M608 368C650 387 671 390 702 382" stroke="#58A6FF" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="620" cy="318" r="8" fill="#FFB15E"/>
+  <circle cx="620" cy="368" r="8" fill="#58A6FF"/>
+  <rect x="110" y="78" width="184" height="44" rx="22" fill="#172338" stroke="#38506D" stroke-width="2"/>
+  <text x="132" y="106" fill="#F7F0E6" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="18" font-weight="700">Codex App</text>
+  <rect x="658" y="628" width="172" height="44" rx="22" fill="#172338" stroke="#38506D" stroke-width="2"/>
+  <text x="688" y="656" fill="#F7F0E6" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="18" font-weight="700">手机控制器</text>
+  <defs>
+    <radialGradient id="bg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(744 198) rotate(128) scale(632 730)">
+      <stop stop-color="#1B4B7A"/>
+      <stop offset=".44" stop-color="#0D1A2B"/>
+      <stop offset="1" stop-color="#07101B"/>
+    </radialGradient>
+  </defs>
+</svg>

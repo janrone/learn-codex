@@ -1,0 +1,28 @@
+<svg width="900" height="680" viewBox="0 0 900 680" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="680" fill="#091424"/>
+  <rect x="42" y="42" width="816" height="596" rx="34" fill="#0E1A2D" stroke="#2D425E" stroke-width="3"/>
+  <text x="74" y="104" fill="#F7F0E6" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="32" font-weight="700">手机联动配置流程</text>
+  <text x="76" y="140" fill="#9FB2C9" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="18">同一账号、电脑在线、手机审核，是跑通远程 Codex 的三件核心事。</text>
+  <g font-family="Segoe UI, Microsoft YaHei, sans-serif">
+    <rect x="78" y="198" width="744" height="72" rx="22" fill="#13233A" stroke="#3B5677" stroke-width="2"/>
+    <circle cx="124" cy="234" r="20" fill="#FFB15E"/>
+    <text x="118" y="241" fill="#07101B" font-size="18" font-weight="800">1</text>
+    <text x="164" y="226" fill="#FFFFFF" font-size="21" font-weight="700">电脑安装 Codex</text>
+    <text x="164" y="252" fill="#AEBED2" font-size="16">App 或 CLI 都可以，先让工作站具备执行能力。</text>
+    <rect x="78" y="292" width="744" height="72" rx="22" fill="#13233A" stroke="#3B5677" stroke-width="2"/>
+    <circle cx="124" cy="328" r="20" fill="#58A6FF"/>
+    <text x="118" y="335" fill="#07101B" font-size="18" font-weight="800">2</text>
+    <text x="164" y="320" fill="#FFFFFF" font-size="21" font-weight="700">手机安装 ChatGPT App</text>
+    <text x="164" y="346" fill="#AEBED2" font-size="16">iOS 或 Android 都行，使用同一个 OpenAI 账号登录。</text>
+    <rect x="78" y="386" width="744" height="72" rx="22" fill="#13233A" stroke="#3B5677" stroke-width="2"/>
+    <circle cx="124" cy="422" r="20" fill="#9AD97B"/>
+    <text x="118" y="429" fill="#07101B" font-size="18" font-weight="800">3</text>
+    <text x="164" y="414" fill="#FFFFFF" font-size="21" font-weight="700">电脑端启动真实项目</text>
+    <text x="164" y="440" fill="#AEBED2" font-size="16">保持联网和供电，让 Codex 能读仓库、改文件、跑命令。</text>
+    <rect x="78" y="480" width="744" height="72" rx="22" fill="#13233A" stroke="#3B5677" stroke-width="2"/>
+    <circle cx="124" cy="516" r="20" fill="#FFB15E"/>
+    <text x="118" y="523" fill="#07101B" font-size="18" font-weight="800">4</text>
+    <text x="164" y="508" fill="#FFFFFF" font-size="21" font-weight="700">手机进入 Codex</text>
+    <text x="164" y="534" fill="#AEBED2" font-size="16">查看状态、读输出、审核 diff、批准或拒绝命令。</text>
+  </g>
+</svg>

@@ -10,6 +10,23 @@ export const metadata: Metadata = {
 
 const groups = ["官方核心", "热门工具", "Skills / 插件", "生态平台"] as const;
 
+const hotArticles = [
+  {
+    href: "/hot/codex-mobile-control",
+    title: "手机远程控制 Codex：把电脑变成 AI 开发工作站",
+    summary:
+      "从同账号登录、手机查看状态、审核 diff、批准命令，到家里电脑、Mac mini、VPS 三种远程工作站方案。",
+    tag: "远程工作站",
+  },
+  {
+    href: "/hot/codex-practical-flow",
+    title: "把 Codex 真正接进日常开发流程",
+    summary:
+      "把 Codex 的任务下发、执行闭环、排错顺序和落地方法放到一篇里，适合直接接进真实项目。",
+    tag: "实战流程",
+  },
+];
+
 export default function HotPage() {
   return (
     <main className="mx-auto flex w-full max-w-6xl flex-1 flex-col gap-10 px-6 py-12 md:py-20">
@@ -36,6 +53,31 @@ export default function HotPage() {
         <div className="rounded-[24px] border border-white/10 bg-white/[0.03] p-5">
           <p className="text-3xl font-semibold text-white">GitHub</p>
           <p className="mt-2 text-sm text-slate-300">按热门与相关性整理</p>
+        </div>
+      </section>
+
+      <section className="space-y-4">
+        <div>
+          <p className="text-sm uppercase tracking-[0.24em] text-slate-400">Hot Articles</p>
+          <h2 className="mt-3 text-3xl font-semibold text-white">热门长文</h2>
+        </div>
+        <div className="grid gap-4 lg:grid-cols-2">
+          {hotArticles.map((article) => (
+            <Link
+              key={article.href}
+              href={article.href}
+              className="rounded-[28px] border border-white/10 bg-white/[0.04] p-6 transition hover:border-orange-200/40 hover:bg-white/[0.06]"
+            >
+              <span className="rounded-full border border-orange-300/20 bg-orange-400/10 px-3 py-1 text-sm text-orange-100">
+                {article.tag}
+              </span>
+              <h3 className="mt-4 text-2xl font-semibold text-white">{article.title}</h3>
+              <p className="mt-3 text-sm leading-7 text-slate-300">{article.summary}</p>
+              <span className="mt-6 inline-flex text-sm font-medium text-orange-200">
+                阅读文章
+              </span>
+            </Link>
+          ))}
         </div>
       </section>
 
