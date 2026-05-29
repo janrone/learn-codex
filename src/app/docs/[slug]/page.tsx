@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
@@ -91,19 +92,70 @@ export default async function GuidePage({ params }: GuidePageProps) {
         <p className="text-lg leading-8 text-slate-300">{guide.description}</p>
       </section>
 
-      <section className="grid gap-4 rounded-[28px] border border-white/10 bg-white/[0.04] p-6 md:grid-cols-2">
-        {guide.sections.map((section) => (
-          <div
+      <section className="space-y-6 rounded-[28px] border border-white/10 bg-white/[0.04] p-4 md:p-6">
+        {guide.sections.map((section, index) => (
+          <article
             key={section.title}
-            className="rounded-[24px] border border-white/10 bg-slate-950/35 p-6"
+            className="rounded-[24px] border border-white/10 bg-slate-950/35 p-5 md:p-7"
           >
-            <h2 className="text-2xl font-semibold text-white">{section.title}</h2>
-            <div className="mt-4 space-y-4 text-sm leading-7 text-slate-300">
+            <div className="flex items-start gap-4">
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-orange-300/30 bg-orange-300/10 text-sm font-semibold text-orange-100">
+                {index + 1}
+              </span>
+              <h2 className="text-2xl font-semibold text-white">{section.title}</h2>
+            </div>
+            <div className="mt-5 space-y-4 text-base leading-8 text-slate-300">
               {section.body.map((paragraph) => (
                 <p key={paragraph}>{paragraph}</p>
               ))}
             </div>
-          </div>
+            {section.links ? (
+              <div className="mt-5 flex flex-wrap gap-3">
+                {section.links.map((link) => (
+                  <Link
+                    key={link.url}
+                    href={link.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex rounded-full border border-orange-300/25 bg-orange-300/10 px-4 py-2 text-sm font-medium text-orange-100 transition hover:border-orange-200/50 hover:bg-orange-300/15 hover:text-white"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+            ) : null}
+            {section.steps ? (
+              <ol className="mt-5 space-y-3 text-sm leading-7 text-slate-200">
+                {section.steps.map((step, stepIndex) => (
+                  <li key={step} className="flex gap-3">
+                    <span className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-slate-800 text-xs font-semibold text-orange-100">
+                      {stepIndex + 1}
+                    </span>
+                    <span>{step}</span>
+                  </li>
+                ))}
+              </ol>
+            ) : null}
+            {section.note ? (
+              <p className="mt-5 rounded-2xl border border-orange-300/20 bg-orange-300/10 p-4 text-sm leading-7 text-orange-50">
+                {section.note}
+              </p>
+            ) : null}
+            {section.image ? (
+              <figure className="-mx-2 mt-6 overflow-hidden rounded-2xl border border-white/10 bg-white md:-mx-1">
+                <Image
+                  src={section.image.src}
+                  alt={section.image.alt}
+                  width={1400}
+                  height={900}
+                  className="h-auto w-full"
+                />
+                <figcaption className="border-t border-slate-200 bg-slate-50 px-4 py-3 text-sm leading-6 text-slate-600">
+                  {section.image.caption}
+                </figcaption>
+              </figure>
+            ) : null}
+          </article>
         ))}
       </section>
 
