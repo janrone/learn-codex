@@ -44,7 +44,7 @@ export const siteConfig = {
   ],
 };
 
-export const guides: Guide[] = [
+const guideItems: Guide[] = [
   {
     slug: "what-is-codex",
     title: "Codex 是什么，适合哪些开发者使用",
@@ -985,6 +985,29 @@ export const guides: Guide[] = [
       },
     ],
   },
+];
+
+const guideLearningOrder = [
+  "what-is-codex",
+  "codex-desktop-app-installation",
+  "getting-started",
+  "codex-app-x-article-yichen",
+  "most-useful-slash-commands",
+  "built-in-commands",
+  "prompting-for-code",
+  "codex-with-nextjs",
+  "debugging-with-codex",
+  "code-review-workflow",
+  "best-practices",
+  "build-learn-codex-site",
+  "common-errors",
+];
+
+export const guides: Guide[] = [
+  ...guideLearningOrder
+    .map((slug) => guideItems.find((guide) => guide.slug === slug))
+    .filter((guide): guide is Guide => Boolean(guide)),
+  ...guideItems.filter((guide) => !guideLearningOrder.includes(guide.slug)),
 ];
 
 export const categories = [
