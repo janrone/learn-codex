@@ -1,28 +1,45 @@
+<div align="center">
+
 # Learn Codex
 
 面向中文用户的 Codex 学习与实践教程站。
 
-Learn Codex 不是一份简单的命令速查表，而是一个围绕真实任务整理的中文内容站：从认识 Codex、安装桌面 App、跑通第一个任务，到配置扩展、使用命令、进入 Next.js 项目实战、调试、代码审查和长期协作。
+从认识 Codex、安装桌面 App、跑通第一个任务，到配置扩展、项目实战、调试审查和长期协作，把零散经验整理成一条可以照着走的学习路径。
 
-如果你正在学习 Codex，或者想把 Codex 接进自己的开发流程，这个项目可以作为一条从入门到实践的阅读路径。
+[![Next.js](https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=nextdotjs)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-38bdf8?style=flat-square&logo=tailwindcss)](https://tailwindcss.com/)
+[![License](https://img.shields.io/badge/Content-Community-orange?style=flat-square)](#声明)
 
-## 在线仓库
+[教程目录](#你会在这里看到什么) · [阅读路径](#推荐阅读路径) · [本地预览](#本地预览) · [参与贡献](#参与贡献) · [赞助商](#赞助商)
 
-GitHub 仓库：
+</div>
 
-https://github.com/ismoshushi/learn-codex
+![Learn Codex hero](./public/images/codex-article-hero.svg)
 
-本项目使用 `Next.js App Router + TypeScript + Tailwind CSS` 构建，适合部署到 Vercel。
+## 这是什么
 
-## 项目愿景
+Learn Codex 不是一份简单的命令速查表，而是一个围绕真实任务整理的中文内容站。
 
 Codex 的价值不只是“帮你写代码”，而是把需求拆成可执行任务：读取项目、修改文件、运行命令、检查页面、总结结果，并形成可复用的工作流。
 
-Learn Codex 关注三个问题：
+这个项目关注三个问题：
 
-- **怎么开始**：新手应该从哪里进入，如何安装、登录、选择项目，并完成第一个低风险任务。
-- **怎么配置**：什么时候需要调整模型、权限、插件、MCP、自动化和 API 相关配置。
-- **怎么落地**：如何把 Codex 用在真实项目里，包括写代码、排错、审查、构建、部署和复盘。
+| 问题 | 说明 |
+| --- | --- |
+| 怎么开始 | 新手应该从哪里进入，如何安装、登录、选择项目，并完成第一个低风险任务 |
+| 怎么配置 | 什么时候需要调整模型、权限、插件、MCP、自动化和 API 相关配置 |
+| 怎么落地 | 如何把 Codex 用在真实项目里，包括写代码、排错、审查、构建、部署和复盘 |
+
+## 项目预览
+
+| 配置地图 | 最小路线 |
+| --- | --- |
+| ![Codex configuration map](./public/images/guides/codex-configuration/configuration-map.svg) | ![Codex minimal route](./public/images/guides/codex-configuration/minimal-route.svg) |
+
+| 工作流 | 任务拆解 |
+| --- | --- |
+| ![Codex workflow](./public/images/codex-workflow-loop.svg) | ![Codex task brief](./public/images/codex-task-brief.svg) |
 
 ## 适合谁
 
@@ -88,6 +105,15 @@ Learn Codex 关注三个问题：
 - Codex 常见错误与排查方法
 
 目标是建立稳定的协作节奏：先说明目标和边界，再执行，再验证，再复盘。
+
+## 技术栈
+
+| 技术 | 用途 |
+| --- | --- |
+| Next.js App Router | 页面路由、静态生成、SEO |
+| TypeScript | 类型约束和内容数据结构 |
+| Tailwind CSS | 页面样式和响应式布局 |
+| Vercel | 推荐部署平台 |
 
 ## 内容框架
 
@@ -171,14 +197,6 @@ NEXT_PUBLIC_SITE_URL=https://your-domain.com
 4. 设置环境变量 `NEXT_PUBLIC_SITE_URL`。
 5. 绑定正式域名。
 
-## 设计原则
-
-- **小白友好**：尽量解释为什么这样做，而不是只给结论。
-- **真实任务导向**：每篇教程尽量围绕具体场景、步骤和验证结果展开。
-- **配置按需开启**：先跑通基础流程，再根据实际卡点补充插件、权限、MCP 或 API 配置。
-- **验证优先**：代码修改要看构建、页面、diff 或实际效果，不能只看“完成了”的文字。
-- **可共建**：欢迎把真实经验、常见问题和工具推荐沉淀成内容。
-
 ## 参与贡献
 
 欢迎提交：
@@ -195,6 +213,22 @@ NEXT_PUBLIC_SITE_URL=https://your-domain.com
 - 这个问题适合哪类用户
 - 当前遇到的卡点是什么
 - 是否有可参考的截图、链接或复现步骤
+
+## 赞助商
+
+想出现在这里？添加微信时请备注你的产品名和项目赞助说明。
+
+| 赞助商 | 产品 / 项目 | 说明 |
+| --- | --- | --- |
+| 暂无 | 欢迎成为首位赞助商 | 支持 Learn Codex 持续整理中文教程、实战案例和工具资料 |
+
+## 设计原则
+
+- **小白友好**：尽量解释为什么这样做，而不是只给结论。
+- **真实任务导向**：每篇教程尽量围绕具体场景、步骤和验证结果展开。
+- **配置按需开启**：先跑通基础流程，再根据实际卡点补充插件、权限、MCP 或 API 配置。
+- **验证优先**：代码修改要看构建、页面、diff 或实际效果，不能只看“完成了”的文字。
+- **可共建**：欢迎把真实经验、常见问题和工具推荐沉淀成内容。
 
 ## 声明
 
