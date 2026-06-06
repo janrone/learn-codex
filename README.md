@@ -11,7 +11,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-38bdf8?style=flat-square&logo=tailwindcss)](https://tailwindcss.com/)
 [![License](https://img.shields.io/badge/Content-Community-orange?style=flat-square)](#声明)
 
-[教程目录](#你会在这里看到什么) · [阅读路径](#推荐阅读路径) · [本地预览](#本地预览) · [参与贡献](#参与贡献) · [赞助商](#赞助商)
+[教程目录](#你会在这里看到什么) · [阅读路径](#推荐阅读路径) · [本地预览](#本地预览) · [参与贡献](#参与贡献) · [致谢](#致谢与来源) · [赞助商](#赞助商)
 
 </div>
 
@@ -229,6 +229,19 @@ NEXT_PUBLIC_SITE_URL=https://your-domain.com
 - **配置按需开启**：先跑通基础流程，再根据实际卡点补充插件、权限、MCP 或 API 配置。
 - **验证优先**：代码修改要看构建、页面、diff 或实际效果，不能只看“完成了”的文字。
 - **可共建**：欢迎把真实经验、常见问题和工具推荐沉淀成内容。
+
+## 致谢与来源
+
+Learn Codex 在整理内容、工具列表和页面实现时，参考或引用了以下公开资料与开源项目，在此致谢：
+
+- [OpenAI Codex](https://github.com/openai/codex)、[OpenAI Skills](https://github.com/openai/skills) 与 [codex-plugin-cc](https://github.com/openai/codex-plugin-cc)：Codex 生态相关的官方项目与资料入口。
+- [CodexGuide](https://codexguide.ai/guide/01-app-installation.html)：部分桌面 App 安装与配置内容参考了 CodexGuide 的公开教程。
+- [逸尘 @gengdaJ 在 X 发布的原文](https://x.com/gengdaJ/status/2051891231953920174)：部分 Codex App 使用体验内容参考了该公开分享。
+- [Codex Toolkit](https://github.com/janrone/codex-toolkit)：站内低成本配置 API 与历史同步相关内容围绕该工具整理。
+- 热门项目页收录并致谢的社区项目包括 [Yeachan-Heo/oh-my-codex](https://github.com/Yeachan-Heo/oh-my-codex)、[farion1231/cc-switch](https://github.com/farion1231/cc-switch)、[ryoppippi/ccusage](https://github.com/ryoppippi/ccusage)、[steipete/CodexBar](https://github.com/steipete/CodexBar)、[ComposioHQ/awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills)、[VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills)、[alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills)、[CherryHQ/cherry-studio](https://github.com/CherryHQ/cherry-studio) 和 [iOfficeAI/AionUi](https://github.com/iOfficeAI/AionUi)。
+- 本站使用 [Next.js](https://nextjs.org/)、[React](https://react.dev/)、[TypeScript](https://www.typescriptlang.org/)、[Tailwind CSS](https://tailwindcss.com/) 与 [ESLint](https://eslint.org/) 构建，推荐部署到 [Vercel](https://vercel.com/)；README 徽章来自 [Shields.io](https://shields.io/)。
+
+如果还有任何来源、作者、项目或素材没有被提到，请见谅。欢迎通过 issue、讨论或其他方式联系我，我会在确认后第一时间补充到致谢列表中。
 
 ## 声明
 
